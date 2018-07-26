@@ -2,8 +2,8 @@ Issue: being able to use a Excel user form across PC and Mac
 Problem: The date picker is not consistant and therefore I need to find a way to make an normal field accept dates and ensure the format is correct
 
 Research:
-According to Excel VBA UserForm TextBox - How to format date
-Source: https://www.youtube.com/watch?v=Sf-dvHXbjXs
+According to [Excel VBA UserForm TextBox - How to format date]
+(https://www.youtube.com/watch?v=Sf-dvHXbjXs)
 The following code can be used to get the date formats:
 
 ```
