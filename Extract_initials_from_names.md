@@ -15,7 +15,8 @@ For example cell A2 has the full name, use below formula to get the initials fro
 
 **Solution #1: Use Formula
 ```
-=LEFT(B3,1)&IF(ISERROR(FIND(" ",B3,1)),"",MID(B3,FIND(" ",B3,1)+1,1))&IF(ISERROR(FIND(" ",B3,FIND(" ",B3,1)+1)),"",MID(B3,FIND(" ",B3,FIND(" ",B3,1)+1)+1,1))
+=LEFT(B3,1)&IF(ISERROR(FIND(" ",B3,1)),"",MID(B3,FIND(" ",B3,1)+1,1))
+&IF(ISERROR(FIND(" ",B3,FIND(" ",B3,1)+1)),"",MID(B3,FIND(" ",B3,FIND(" ",B3,1)+1)+1,1))
 ```
 To make it simple formula is limited for the names with max three parts, in case of names having more than 3 parts it will return only first 3 initials. If your name got more than 3 parts, check for solution #2
 
